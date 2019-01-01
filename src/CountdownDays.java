@@ -1,24 +1,17 @@
 
-//Name: Adrien Philardeau-Planche
-//Student Number: 260835598
-
-// do NOT touch these import statements 
 import java.time.format.DateTimeFormatter;  
 import java.time.LocalDateTime;
 
 public class CountdownDays {
     
-    // the method returns a String representing the current date in the following format: dd/mm/yyyy
-    // you can use it, but do NOT modify it!
+    
     public static String getCurrentDate() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");  
         LocalDateTime now = LocalDateTime.now();  
         return dtf.format(now);
     }
     
-    //========================
-    // Enter your code below
-    
+  
     public static String getSubstring(String s, int i, int j){    //string and two int inputs
     	if(j<i)
     		throw new IllegalArgumentException("Your second integer must be greater than your first integer.");  //throws error if j>i
